@@ -230,3 +230,4 @@ for (let tahun = 1600; tahun <= 2024; tahun += 4) {
      console.log(tahun + ' bukan tahun kabisat.');
    }
  }
+
