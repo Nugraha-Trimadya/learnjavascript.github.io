@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                // mencari gaji pokok - tunjangan -gaji bersih - pajak//
+// let = 'karyawan';
+// let gaji_pokok = 1000000;
+// let tunjangan;
+// let pajak;
+// let gaji_bersih;
+
+// tunjangan = 20/100 * gaji_pokok;
+// gaji_bersih = gaji_pokok + tunjangan - pajak
+
+// console.log('karyawan')
+// console.log(gaji_pokok)
+// console.log(tunjangan)
+// console.log(pajak)
+// console.log(gaji_bersih)
+
+
+
+//mencari jam-menit-detik//
+// let jam= 1;
+// let menit= 30;
+// let detik = 300;
+// let hasil;
+
+// jam *= 3600
+// menit *= 60
+// hasil = (jam + menit + detik)
+// console.log(hasil)
+
+//mengkonversikan detik ke jam//
+// Mengambil input total detik dari user
+let totalDetik = parseInt(prompt("Masukkan total detik:"));
+
+// Menghitung jam, menit, dan detik
+let jam = Math.floor(totalDetik / 3600);
+let sisaDetik1 = totalDetik % 3600;
+let menit = Math.floor(sisaDetik1 / 60);
+let detik = sisaDetik1 % 60;
+
+// Menampilkan hasil konversi
+console.log(`${totalDetik} detik sama dengan ${jam} jam ${menit} menit ${detik} detik.`);
+    </script>
+    </script>
+</body>
+</html>

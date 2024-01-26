@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//mencari nilai
+//         let dpk = 70;
+// let mtk = 60;
+// let agama= 100;
+// let rata;
+
+// rata = [dpk + mtk + agama] / 3
+// rata = Math.round(rata)
+// console.log(rata)
+
+// if(rata > 80 && rata <= 100){
+//     console.log('a')
+// }else if( rata > 75 && rata <= 80){
+//     console.log('b')
+// }else if(rata > 65 && rata <= 75){
+//     console.log('c')
+// }else if (rata > 45 && rata <= 65){
+//     console.log('d')
+// }else if(rata > 0 && rata <= 45){
+//     console.log("E")
+// }else{
+//     console.log("kamu gagal bjir")
+// }
+
+//menentukan hari dan tahun switch case
+
+let kodeDigit = 525011200203;
+let g = Math.floor((kodeDigit % 100000000000)/ 10000000000);
+let dd = Math.floor((kodeDigit % 10000000000)/100000000);
+let mm = Math.floor((kodeDigit % 100000000)/1000000);
+let yyy = Math.floor((kodeDigit % 1000000)/100);
+let nn = Math.floor((kodeDigit % 100));
+
+    switch (mm) {
+      case 1:
+        bulan = "Januari";
+        break;
+      case 2:
+        bulan = "Februari";
+        break;
+      case 3:
+        bulan = "Maret";
+        break;
+      case 4:
+        bulan = "April";
+        break;
+      case 5:
+        bulan = "Mei";
+        break;
+      case 6:
+        bulan = "Juni";
+        break;
+      case 7:
+        bulan = "Juli";
+        break;
+      case 8:
+        bulan = "Agustus";
+        break;
+      case 9:
+        bulan = "September";
+        break;
+      case 10:
+        bulan = "Oktober";
+        break;
+      case 11:
+        bulan = "November";
+        break;
+      case 12:
+        bulan = "Desember";
+        break;
+      default:
+        bulan = "Bulan tidak valid";
+        break;
+    }
+  
+
+console.log(g ,dd,bulan,yyy,nn)
+
+
+
+// let g = (Math.random() * 10) + 1; 
+// g = Math.round(g)
+// const dd = new Date().getDate(); // mengambil hari saat ini
+// const mm = 5; 
+// const yyyy = new Date().getFullYear(); // mengambil tahun saat ini
+// let nn =(Math.random() * 10) + 1 ; 
+// nn = Math.round(nn)
+// const gddmmyyynn = `${g}${dd}${mm}${yyyy}${nn}`;
+
+// console.log(gddmmyyynn);
+
+
+
+
+
+//menentukan jam menit detik
+// let hh = 6; //input
+// let m = 48; //input
+// let ss = 14; //input
+
+
+// menentukan jam menit detik
+// if (ss + 1 == 60) {
+//     ss = 0;
+//     m++;
+
+//     if (m == 60) {
+//         m = 0;
+//         hh++;
+
+//         if (hh == 24) {
+//             hh = 0;
+//             m = 0;
+//             ss = 0
+//         }
+//     } else {
+//         m++;
+//     }
+// } else {
+//     ss++;
+// }
+ 
+// console.log(`Jam ${hh}, Menit ${m}, Detik ${ss}`);
+    </script>
+</body>
+</html>
