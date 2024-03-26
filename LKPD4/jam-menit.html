@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let hh = 2; //input
+        let m = 48; //input
+        let ss = 59; //input
+
+
+        if (ss + 1 == 60) {
+            ss = 0;
+            m++;
+
+            if (m == 60) {
+                m = 0;
+                hh++;
+
+                if (hh == 24) {
+                    hh = 0;
+                    m = 0;
+                    ss = 0
+                }
+            } else {
+                m++;
+            }
+        } else {
+            ss++;
+        }
+
+        console.log(`Jam ${hh}, Menit ${m}, Detik ${ss}`);
+
+
+    </script>
+</body>
+
+</html>

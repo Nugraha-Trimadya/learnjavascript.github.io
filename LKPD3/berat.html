@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                //mencari berat //
+                let beratBuahJerukKg = parseFloat(prompt("Masukkan berat buah jeruk:"));
+
+let beratBuahJerukGram = beratBuahJerukKg * 1000;
+let hargaPerKg = 500;
+
+let totalHargaSebelumDiskon = beratBuahJerukGram * (hargaPerKg / 100);
+let diskon = 0.05 * totalHargaSebelumDiskon;
+let totalHargaSetelahDiskon = totalHargaSebelumDiskon - diskon;
+
+console.log("Total Harga Sebelum Diskon: " + totalHargaSebelumDiskon + " rupiah");
+console.log("Diskon: " + diskon + " rupiah");
+console.log("Total Harga Setelah Diskon: " + totalHargaSetelahDiskon + " rupiah");
+
+// bilangan satuan,puluhan,ratusan//
+let bilangan = 567;
+        let satuan = bilangan % 10;
+        let puluhan = Math.floor((bilangan / 10) % 10);
+        let ratusan = Math.floor(bilangan / 100);
+
+        console.log("Angka Satuan: " + satuan);
+        console.log("Angka Puluhan: " + puluhan);
+        console.log("Angka Ratusan: " + ratusan);
+    </script>
+</body>
+</html>

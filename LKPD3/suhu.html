@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+           //mencari suhu//
+    let suhuFahrenheit = parseFloat(prompt("Masukkan suhu dalam Fahrenheit:"));
+
+let suhuCelsius = (suhuFahrenheit - 32) * (5 / 9);
+
+let kategori;
+if (suhuCelsius > 300) {
+    kategori = "panas";
+} else if (suhuCelsius < 250) {
+    kategori = "dingin";
+} else {
+    kategori = "normal";
+}
+
+console.log("Suhu: " + kategori);
+    </script>
+</body>
+</html>

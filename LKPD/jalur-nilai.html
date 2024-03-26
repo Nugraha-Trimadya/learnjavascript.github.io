@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//Jalur Nilai
+let jalur = 'rapot'; //input
+let nilai = 80; //input
+let tes = 100; //input
+
+if (nilai >= 90 && nilai <= 100){
+  console.log("Anda lolos dengan nilai sempurna!")  
+} else if (nilai >= 75){
+    if (jalur == 'rapot'){
+        console.log("Anda lolos dengan jalur rapot!")
+    } else if(jalur == 'prestasi'){
+        console.log("Anda lulus dengan jalur prestasi!")
+    }
+}else{
+    if (tes >= 75){
+        console.log("anda lolos dari tes mandiri");
+    } else {
+        console.log("anda tidak lolos")
+     }
+        }
+    </script>
+</body>
+</html>
